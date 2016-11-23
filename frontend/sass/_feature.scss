@@ -1,0 +1,157 @@
+@charset "UTF-8";
+/*  Feature section */
+.feature-wrapper {
+  padding: 68px 0;
+  background: $second;
+  overflow-x: hidden;
+}
+.feature-list {
+  ul {
+    color: $second-text;
+    font-weight: 300;
+    padding-left: 26px;
+    li {
+      padding: 51px 0 43px 130px;
+    }
+    li:nth-child(1){
+      background: url('img/list-1.png') no-repeat left center;
+    }
+    li:nth-child(2){
+      background: url('img/list-2.png')  no-repeat left center;
+    }
+    li:nth-child(3){
+      background: url('img/list-3.png')  no-repeat left center;
+    }
+  }
+}
+.feature-poster {
+  background: url('img/feature-poster.png') no-repeat 0% 0%;
+  width: 100%;
+  height: 700px;
+  position: absolute;
+  top: -21px;
+  right: -590px;
+  overflow-x: hidden;
+}
+
+/*  Advantages Section */
+.advantage-wrapper {
+  padding: 53px 0 80px 0;
+  background: $pryme;
+  text-align: center;
+
+  .advantage-column {
+    max-width: 283px;
+    margin-top: 15px;
+  }
+
+  .advantage-column-caption {
+    color: $second-text;
+    font-weight: 300;
+    width: 100%;
+    margin-top: 30px;
+  }
+}
+
+.advantage-column-logo {
+  height: 75px;
+  padding: 20px 0;
+}
+.first {
+    background: url('img/advantage.png') no-repeat -13% 0;
+    &::before {
+      background: url('img/arrows.png') no-repeat;
+      content: ".";
+      color: transparent;
+      width: 195px;
+      position: absolute;
+      left: 82%;
+      top: -13%;
+    }
+}
+.second {
+    background: url('img/advantage.png') no-repeat 27% 0;
+    &::before {
+      background: url(img/arrows.png) no-repeat 53% -163%;
+      content: ".";
+      color: transparent;
+      width: 195px;
+      position: absolute;
+      left: 78%;
+      top: -23%;
+      height: 100%;
+    }
+}
+.third {
+    background: url('img/advantage.png') no-repeat 67% 0;
+    &::before {
+      background: url('img/arrows.png') no-repeat;
+      content: ".";
+      color: transparent;
+      width: 195px;
+      position: absolute;
+      left: 91%;
+      top: -20%;
+    }
+}
+.fourth {
+    background: url('img/advantage.png') no-repeat 107% 0;
+}
+
+/*  Perk Section */
+.perk-wrapper {
+  background: $second;
+  padding: 75px 0 114px 0;
+  .perk-poster {
+    position: absolute;
+    right: 50%;
+  }
+}
+
+.perk-list {
+  margin-left: 54%;
+  padding-top: 1.8em;
+  li {
+      background: url('img/pointer.png') no-repeat left 5%;
+      padding: 0 0 20px 25px;
+      color: #93aac9;
+      font-size: 0.64em;
+    }
+}
+
+// registration anf mention wrapper
+.registration-full-wrapp {
+  background: url('img/mention-bg.png') no-repeat 100% 100%;
+}
+
+/* Mention and registration section */
+
+.mention {
+  margin: 0 auto;
+  padding: 74px 0 103px 0;
+  h2 {
+    color: $pryme;
+  }
+  .carousel {
+    padding-top: 1em;
+  }
+  p {
+    color: $pryme;
+    font-style: italic;
+    font-weight: 300;
+    font-size: 25px;
+  }
+}
+
+.registration {
+  padding-bottom:85px;
+  h2 {
+    text-align: center;
+    color: $second-text;
+    padding-bottom: 2em;
+  }
+}
+
+form .error{
+  border: 2px solid red;
+}

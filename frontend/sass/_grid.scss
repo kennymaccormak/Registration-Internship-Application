@@ -1,0 +1,93 @@
+@charset "UTF-8";
+
+header,
+.feature,
+.advantage,
+.perk,
+.mention,
+footer {
+  @include make-row();
+}
+
+/*  Header section */;
+header {
+  .logo {
+    @include make-md-column(3);
+  }
+  .hero {
+    @include make-md-column(12);
+  }
+}
+
+/*  Feature secton */
+.feature {
+  position: relative;
+}
+.feature-list {
+    @include make-md-column(6);
+}
+
+/*  Advantages Section */
+.advantage-column {
+  @include make-md-column(3);
+}
+
+/*  Perk Section */
+.perk-list {
+  @include make-md-column-offset(6);
+  @include make-md-column(6);
+}
+
+.mention {
+  @include make-md-column(12);
+}
+
+.registration {
+  @include make-md-column(12);
+  .tab-step {
+    @include make-md-column(6);
+  }
+}
+
+// form-group
+.reg-form-tabs {
+  @include make-row();
+  .tab {
+    @include make-md-column-offset(2);
+    @include make-md-column(3);
+  }
+}
+.reg-form {
+  form{
+    @include make-row();
+  }
+  @include make-md-column-offset(2);
+  @include make-md-column(8);
+}
+.reg-form .form-group {
+  @include make-md-column(6);
+}
+.reg-form .birth-data-wrapper,
+.reg-form .lang-wrapper {
+  @include make-md-column(6);
+}
+.reg-form .ctrl-btn-wrapper {
+  @include make-md-column-offset(6);
+  @include make-md-column(6);
+}
+.reg-form .birth-data {
+  @include make-md-column(4);
+}
+
+
+
+footer {
+  .client-block {
+    @include make-md-column(1);
+    @include make-sm-column(1);
+    @include make-xs-column(4);
+  }
+  .abouts-us {
+    @include make-md-column(12);
+  }
+}

@@ -1,0 +1,44 @@
+@media screen and(max-width: 980px) {
+
+  /*  Advantages Section */
+  .advantage-wrapper {
+    .advantage-column {
+      margin: 0 auto;
+    }
+    .first::before,
+    .second::before,
+    .third::before{
+      display: none;
+    }
+
+  }
+
+  .perk-list {
+    margin-left: 0%;
+  }
+  .perk-poster {
+    display: none;
+  }
+  .registration-full-wrapp {
+    background: url('img/mention-bg.png') no-repeat 100% 0% #080f1d;
+
+  }
+
+  .submitBtn {
+    position: relative !important;
+    right: 0;
+    width: 100%!important ;
+  }
+  .prevBtn {
+    width: 100% !important;
+    margin-right: 0%;
+  }
+}
+
+@media screen and(max-width: 760px) {
+  .logo {
+    left: 0;
+    width: 54%;
+    margin: 0 auto;
+  }
+}

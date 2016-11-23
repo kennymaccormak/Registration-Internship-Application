@@ -1,0 +1,77 @@
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 28px;
+  font-weight: 400;
+}
+ul li {
+  list-style: none;
+}
+a:hover,
+a:focus {
+  text-decoration: none;
+}
+
+
+
+/*vars and blocks */
+$pryme: #fff;
+$second: #f4f4f4;
+$second-text: #5a5a5a;
+$akcent: #ed145b;
+$footer-bg: #1b1d28;
+
+
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+     -moz-border-radius: $radius;
+      -ms-border-radius: $radius;
+          border-radius: $radius;
+}
+@mixin transition($what, $time, $how) {
+    -webkit-transition: $what $time $how;
+    -moz-transition:    $what $time $how;
+    -ms-transition:     $what $time $how;
+    -o-transition:      $what $time $how;
+    transition:         $what $time $how;
+}
+
+
+.registration-btn {
+  margin: 50px auto;
+  button {
+    @include border-radius(100px);
+    @include transition(all,.2s,ease-out);
+    background: $akcent;
+    color: $pryme;
+    border: 1px solid $akcent;
+    outline: none;
+    padding: 17px 43px;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    &:hover,&:focus {
+      background: $pryme;
+      color: $akcent;
+    }
+  }
+}
+
+h2.prime-title {
+  font-size: 2.07em;
+  font-weight: 100;
+  padding-bottom: 55px;
+  color: $second-text;
+}
+h2.second-title {
+  @extend h2.prime-title;
+  &:after {
+    content: ".";
+    color: transparent;
+    border-bottom: 2px solid $akcent;
+    width: 195px;
+    padding-bottom: 40px;
+    position: absolute;
+    left: 20px;
+  }
+}
