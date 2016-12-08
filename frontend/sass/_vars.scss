@@ -21,7 +21,9 @@ $second-text: #5a5a5a;
 $akcent: #ed145b;
 $footer-bg: #1b1d28;
 
-
+.akcent {
+  color: $akcent;
+}
 @mixin border-radius($radius) {
   -webkit-border-radius: $radius;
      -moz-border-radius: $radius;

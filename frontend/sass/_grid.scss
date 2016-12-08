@@ -12,7 +12,8 @@ footer {
 /*  Header section */;
 header {
   .logo {
-    @include make-md-column(3);
+    @include make-md-column(12);
+    @include make-sm-column(12);
   }
   .hero {
     @include make-md-column(12);

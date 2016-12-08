@@ -1,5 +1,5 @@
 .form-wrapper {
-  padding: 0px 0 87px 0;
+  padding: 80px 0 87px 0;
   .container {
     background: $pryme;
     border: 1px solid #ededed;
@@ -11,7 +11,11 @@
     margin: 0;
   }
 }
-
+#personalData .form-group.controllBtn {
+  float: right;
+  width: 45%;
+  margin: 0 auto;;
+}
 .reg-form {
   .control-label {
     font-size: 0.5em;
@@ -28,8 +32,6 @@
   .form-group {
     margin-bottom: 1em;
   }
-}
-.reg-form {
   .tab {
     text-align: center;
     line-height: 60%;
@@ -46,8 +48,62 @@
     line-height: 15px;
   }
 
-
 }
+
+textarea {
+  @include border-radius(19px);
+  width: 100%;
+  height: 106px;
+  outline: none;
+  resize: none;
+  font-size: 14px;
+  background: #fafafa;
+  padding: 0.7em;
+}
+
+// Fake upload button
+.upload {
+  position: relative;
+  overflow: hidden;
+  font-size: 16px;
+  height: 36px;
+  line-height: 34px;
+  @include border-radius(50px);
+  background: #fafafa;
+  border: 1px solid #ccc;
+}
+
+.upload > button{
+  float: right;
+  height: 100%;
+  padding: 0px 16px;
+  border: 0;
+  outline: none;
+}
+.upload > div{
+    padding-left: 1em
+}
+// Real upload button hidden
+.upload input[type=file]{
+  border: 2px solid;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  cursor: pointer;
+}
+
+@media only screen and ( max-width: 500px ){
+    .upload > div{
+        display: none
+    }
+    .upload > button{
+        width: 100%
+    }
+}
+
 .controllBtn {
   margin: 2.3em 0 0 0;
   @include border-radius(100px);
@@ -78,7 +134,16 @@
   position: relative;
 }
 .submitBtn {
-  @extend .controllBtn;
+  input {
+    @extend .controllBtn;
+    width: 100%;
+    color: $pryme;
+    text-transform: uppercase;
+    &:hover,&:focus {
+      background: $pryme;
+      color: $akcent;
+    }
+  }
   position: absolute !important;
   right: -26px;
   width: 70% !important;

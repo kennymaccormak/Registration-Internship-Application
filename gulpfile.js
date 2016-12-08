@@ -2,7 +2,7 @@
 
 const gulp = require('gulp');
 const debug = require('gulp-debug');
-const sourcemaps = require('gulp-sourcemaps');
+//const sourcemaps = require('gulp-sourcemaps');
 const sass = require('gulp-sass');
 const del = require('del');
 const newer = require('gulp-newer');
