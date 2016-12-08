@@ -7,7 +7,7 @@
 
 
 ## About 
-# this is simple one page applecation for registration to intership for students
+# this is simple one page application for registration to intership for students
 - Simple  one page application
 - Simple for understand back-end part
 
