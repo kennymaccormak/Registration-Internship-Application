@@ -2,7 +2,7 @@
 
   $picture = "";
 
-  $mail_to = 'filkovskyi@gmail.com'; //hr@bmservice.com.ua filkovskyi@gmail.com
+  $mail_to = 'youremail@gmail.com'; 
   $thm = 'BM Distribution Training program';
 
   $msg = '
